@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 25 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-4610.45,-5454.58)">
+        <g transform="matrix(1.16355,-0.016193,0.0139155,0.999903,4248.9,4389.41)">
+            <g id="deviderCard" transform="matrix(0.873607,0,0,1.00121,-6.33017,-221.275)">
+                <g transform="matrix(0.983687,0,0,0.998791,32.5444,158.098)">
+                    <rect x="338.494" y="1135.95" width="6.841" height="2.477" style="fill:rgb(255,173,71);"/>
+                </g>
+                <g transform="matrix(0.983687,0,0,0.998791,15.273,158.098)">
+                    <rect x="338.494" y="1135.95" width="6.841" height="2.477" style="fill:rgb(255,173,71);"/>
+                </g>
+                <g transform="matrix(0.600509,0,0,0.609729,158.742,598.815)">
+                    <circle cx="335.452" cy="1139.66" r="6.107" style="fill:rgb(255,173,71);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
