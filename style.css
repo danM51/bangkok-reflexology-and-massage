@@ -350,6 +350,7 @@ box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
 .videoAndDescriptionContainer{
   /* border: solid 3px black; */
   width: 930px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -825,7 +826,10 @@ transition: all 0.8s;
     }
     .videoAndDescriptionContainer{
       width: 400px;
+      height: 400px;
+
     }
+      
     .videoDescription {
       align-self: unset;
     }
