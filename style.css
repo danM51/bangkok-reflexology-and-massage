@@ -1,0 +1,1029 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    
+    height: 400vh; 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 1s;
+
+}
+
+
+/* first page start */
+
+
+.firstPage{
+    /* border: solid yellow 2px; */
+    height: 100vh;
+        width: 100vw;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: fixed;
+        /* background: url(/linesBackgroundtop.png), url(/linesBackgroundmiddle.png), url(linesBackgroundbottom.png), url(/healingDots.svg); */
+        background: url(/footReflexology.png), url(/footReflexologyTop.png), url(/healingDots.svg);
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-size: 100px, 120px, 1500px;
+        background-position-x: 55%, 65%, right;
+        background-position-y: 60%, 40%, bottom;
+        transition: all 2s;
+}
+
+
+.imgLogoNav{
+    width: 502px;
+}
+/* .mainLogo{
+    width: 70vw;
+    margin-left: 12%;
+    margin-top: 90px;
+} */
+.navBar{
+    background-color: rgba(0, 0, 0, 0.915);
+    width: 100vw;
+    height: 50.7px;
+    padding-left: 19px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 2s;
+    transition: all 4.5s;
+
+}
+/* .navBar:hover{
+background-color: rgba(0, 0, 0, 0.943);
+transition: all 1.5s;
+} */
+.mainLogo{
+    height: 150px;
+    width: 150px;
+    margin-top: 90px;
+    margin-left: 12%;
+    /* margin-bottom: 20px; */
+    transition: all 3.5s;
+    /* background-color: #6b63ff85; */
+    
+}
+.mainLogo:hover{
+    height: 170px;
+    width: 170px;
+    margin-top: 90px;
+    margin-left: 12%;
+    transition: all 3.5s;
+    background-color: #6b63ff85;
+    transition: 1.5s;
+    
+}
+.mainContent{
+    /* border-color: red; */
+    /* /* border-width: 5px; */
+    /* border-style: solid; */
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-size: 5em;
+}
+.healthText{
+    color: #78996D;
+    letter-spacing: 10px;
+}
+
+/* buttons */
+
+.buttonContainer{
+    /* border: solid 2px black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.services{
+font-size: 1.5rem;
+border-style: none;
+border-bottom: 2px solid black;
+background-color: rgba(255, 255, 255, 0.478);
+transition: 0.3s;
+}
+
+.testimonies{
+font-size: 1.5rem;
+border-style: none;
+border-bottom: 2px solid black;
+background-color: rgba(255, 255, 255, 0.593);
+transition: 0.3s;
+}
+.testimonies:hover,
+.services:hover {
+  border-style: none;
+  border-bottom: 2px solid black;
+  background-color: #78996D;
+  padding: 5px;
+  color: white;
+  padding-bottom: 8px;
+  transition: 0.2s;
+}
+
+
+footer{
+    background-color: #78996D ;
+    padding-left: 10%;
+    padding-top: 10px;
+    margin-top: 10%;
+    /* padding-bottom: 10px; */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quickNavigationButtons{
+  position: fixed;
+  margin-left: 95%;
+  margin-top: 49%;
+  /* background-color: #67CB6E; */
+  height: 100px;
+  width: 50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.topOfPage{
+  /* border: solid black 0.5px; */
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: url(/upArrow.svg);
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+.topOfPage:hover {
+  height: 49px;
+  width: 49px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.bottomOfPage{
+  /* border: solid black 0.5px; */
+  background-color: black;
+height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: url(/bottomArrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s;
+}
+button{
+  cursor: pointer;
+}
+.bottomOfPage:hover{
+  height: 49px;
+  width: 49px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.whiteCardLocation{
+    background-color: white;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.678);
+    transition: all 1s;
+}
+.whiteCardLocation:hover{
+width: 70vw;
+height: 230px;
+transition: all 0.8s;
+box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
+}
+  h3 {
+      margin-bottom: 10px;
+      letter-spacing: 5px;
+  }
+  .deviderPNG{
+    width: 80px;
+    height: 10px;
+  }
+
+/* first page end */
+
+
+
+  /* SECOND PAGE */
+
+  .secondPage{
+    border: solid white 20px;
+    height: 120vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    background: url(/topSecondPageCurve.svg), url(/bottomSecondPageCurve.png);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 105%, 105%;
+    background-color: #78996D;
+  }
+  .servicesHeading{
+    font-size: 5rem;
+    color: white;
+  }
+
+  .servicesContainer{
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: 80%;
+    color: #78996D;
+    transition: all 1.3s;
+  }
+  .servicesContainer:hover{
+    height: 55%;
+    width: 85%;
+    transition: all 0.8s;
+  }
+  .servicesOfferedLeft{
+    /* border: solid black 2px; */
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition: all 1.3s;
+  }
+    .servicesOfferedLeft:hover{
+      cursor: default;
+      color: white;
+      /* color: #6c63ff; */
+      transition: all 08.s;
+    }
+
+  /* .deviderPNGVerticle {
+      width: 80px;
+      height: 60px;
+      transform: rotate(90deg);
+  } */
+
+  .servicesOfferedRight{
+    /* border: solid black 2px; */
+    width: auto;
+    height: 90%;
+    cursor: default;
+    display: flex;
+    list-style-type: decimal;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition: all 1.3s;
+  }
+  
+
+    .servicesOfferedRight:hover {
+      /* color: #6c63ff; */
+      color: white;
+      transition: all 08.s;
+    }
+/* SECOND PAGE END */
+
+/* THIRD PAGE */
+
+  .thirdPage{
+    /* border: solid blue 4px; */
+    height: 100vh;
+    width:auto;
+    color: #78996D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #78996D;
+    transition: all 1s;
+  }
+  .thirdPage:hover{
+    background-color: white;
+    transition: all 0.8s;
+  }
+
+.testimoniesHeading {
+    font-size: 5rem;
+    color: #78996D;
+}
+
+.videoAndDescriptionContainer{
+  /* border: solid 3px black; */
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoDescription{
+align-self: flex-start;
+}
+.testimonyVideoContainer{
+  width: 100vw;
+  height: auto;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  /* border: solid red 2px; */
+}
+
+.othertestimoniesContainer{
+  /* border: solid yellow 1px; */
+  /* background-color: #6c63ff; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.otherGreatExperiences{
+  display: none;
+}
+.personTestimony{
+  /* border: solid 2px brown; */
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+}
+.personTestimony:hover{
+color: white;
+background-color: #49996D;
+padding: 10px;
+cursor: default;
+transition: all 0.8s;
+}
+
+.dp1,.dp2,.dp3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* border: solid blue 1px; */
+  background-color: #78996D;
+  margin-top: 10px;
+}
+
+.dp1{
+  background: url(/Bibi.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 1s;
+}
+.dp2{
+  background: url(/Mama2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 1s;
+}
+.dp3{
+  background: url(/Mama3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 1s;
+}
+.dp1:hover, .dp2:hover, .dp3:hover{
+  transition: all 0.8s;
+  width: 100px;
+  height: 100px;
+}
+
+  /* THIRD PAGE END*/
+
+     .fourthPage {
+       /* border: solid blue 4px; */
+       background-color: #78996D;
+       height: 100vh;
+       width: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       padding-top: 50px;
+      transition: all 1s;
+     }
+     .fourthPage:hover{
+      background-color: white;
+      transition: all 0.8s;
+     }
+
+  
+     .teamHeading {
+       font-size: 5rem;
+       color: #78996D;
+     }
+     .topTeam{
+      /* border: solid 2px red; */
+      width: 60%;
+      height: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+
+     .drCard{
+      background-color: #78996D;
+      color: white;
+      width: 40%;
+      height: 100%;
+      transform: rotate(0deg);
+      transition: all 1s;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+     }
+     .drCard:hover{
+      box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.565);
+      transform: rotate(-05deg);
+      transition: all 0.8s;
+
+     }
+     .deviderCardImage{
+      width: 40px;
+      height: 10px;
+     }
+
+
+     /* bangkok picture section start */
+     /* container Start */
+     .bangkokPictures{
+      /* border: solid yellow 2px; */
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+     }
+
+    /* container end */
+
+     .pic{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/1stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+     }
+     .pic2{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/2stPicture.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+     }
+     .pic3{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/3stPicture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .pic4{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/4stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+     }
+     .pic5{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/5stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+     }
+     .pic6{
+      width: 140px;
+      height: 140px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/6stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+     }
+
+     .pic:hover,
+     .pic2:hover,
+     .pic3:hover,
+     .pic4:hover,
+      .pic5:hover, 
+      .pic6:hover{
+      transition: all 0.5s;
+      width: 170px;
+      height: 170px;
+      box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.565);
+     }
+
+ /* bangkok picture section start */
+
+
+     .middleTeam{
+      /* border: solid 2px red; */
+      color: #78996D;
+      width: 80%;
+      height: 15%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+     }
+
+    .middleTeamContainer {
+      display: flex;
+      flex-direction: row;
+      /* border: solid 2px yellow; */
+     }
+     .teamDpContainer{
+      width: 180px;
+      height: 100%;
+      /* border: solid 2px black; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+     
+     .teamDp{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: solid 2px #78996D;
+        transition: all 1s;
+     }
+     .teamDp:hover{
+      width: 90px;
+      height: 90px;
+      transition: all 0.5s;
+     }
+
+     .bottomTeam{
+      /* border: solid 2px red; */
+      background-color: #78996D;
+      width: 80%;
+      height: 20%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+     }
+     .deviderLineFooter{
+      width: 2px;
+      height: 80%;
+      background-color: white;
+     }
+    .location{
+      color: white;
+      /* border: solid 2px yellow; */
+      width: 400px;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .time{
+      color: white;
+        /* border: solid 2px yellow; */
+        width: 400px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .questionContainer{
+      /* border: solid 2px red; */
+      background-color: white;
+      width: 250px;
+      height: 120px;
+      padding: 5px 0px 5px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .questionDevider{
+      background-color: #78996D;
+      width: 100%;
+      height: 3px;
+    }
+    .instagram{
+      height: 80%;
+      width: 27px;
+      background: url(/arrow.svg);
+      background-repeat: no-repeat;
+      /* background-position: center; */
+      background-position-y: 60%;
+      background-position-x: 01%;
+      background-size: 20px;
+      background-color: white;
+    }
+@media screen and (max-width: 767px) {
+  body{
+    max-width: 414px;
+  }
+  .firstPage{
+      background-size: 40px, 50px, 500px;
+      background-position-x: 75%, 90%, right;
+      background-position-y: 70%, 60%, 80%;
+  }
+  .imgLogoNav{
+    width: 250px;
+  }
+  .navBar{
+    height: 40px;
+    width: 100vw;
+  }
+  .mainLogo{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+    transition: all 1s;
+  }
+    .mainLogo:hover {
+      height: 120px;
+      width: 120px;
+      margin-top: 20px;
+      margin-left: 35%;
+      transition: all 3.5s;
+      background-color: #6b63ff85;
+      transition: all 0.8s;
+  
+    }
+  .mainContent{
+    flex-direction: column;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  
+  .healthText {
+      color: #78996D;
+      letter-spacing: 5px;
+    }
+
+    .buttonContainer {
+          /* border: solid 2px black; */
+          height:200px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+    
+    }
+
+    footer{
+      margin-top: 0px;
+        padding-top: 2px;
+        padding-left: 0%;
+    }
+    .whiteCardLocation{
+      width: 250px;
+      height: 100px;
+      margin-top: -45px;
+      font-size: 0.5rem;
+    }
+
+    .whiteCardLocation:hover {
+      width: 300px;
+      height: 120px;
+      transition: all 0.8s;
+      box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
+    }
+    h3{
+      text-align: center;
+    }
+    .deviderPNG{
+      width: 15px;
+      height: 15px;
+    }
+
+         /* SECOND PAGE */
+
+    .secondPage{
+    border: unset;
+    padding-top: 60px;
+    height: 100vh;
+    }
+    .servicesHeading {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    }
+
+    .servicesContainer {
+      /* border: solid red 2px; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      height: 70%;
+      width: 100%;
+      font-size: 0.8rem;
+      color: #78996D;
+      transition: all 1.3s;
+      padding-bottom: 10px;
+      padding-top: 20px;
+    }
+    .servicesContainer:hover{
+      height: 70%;
+      width: 100%;
+      transition: unset;
+    }
+    
+    .servicesOfferedLeft {
+      /* border: solid black 2px; */
+      width: 50%;
+      height: 100%;
+      list-style-type: decimal;
+      align-items: center;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    .servicesOfferedRight {
+      /* border: solid black 2px; */
+      width: 50%;
+      list-style-type: decimal;
+      align-items: center;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    /* THIRD PAGE */
+    .thirdPage{
+      padding-top: 10px;
+      background-color: white;
+    }
+    .testimoniesHeading {
+      font-size: 2rem;
+      color: #78996D;
+    }
+    .videoAndDescriptionContainer{
+      width: 400px;
+    }
+    .videoDescription {
+      align-self: unset;
+    }
+    .testimonyVideoContainer{
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-around;
+    }
+
+    .othertestimoniesContainer {
+      /* border: solid yellow 1px; */
+      /* background-color: #6c63ff; */
+      height:auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .videoDescription {
+      align-self: flex-end;
+      font-size: 0.8rem;
+      padding-left: 15px;
+    }
+
+    .personTestimony{
+      width: 50%;
+      padding: 5px;
+      border-right: solid 1px black;
+    }
+        .personTestimony:hover {
+          color: white;
+          background-color: #49996D;
+          padding: 5px;
+          cursor: default;
+          transition: all 0.8s;
+        }
+    
+    .topOfPage,
+    .bottomOfPage{
+      display: none;
+    }
+  .dp1,
+  .dp2,
+  .dp3 {
+  width: 50px;
+  height: 50px;
+  } 
+
+  .fourthPage{
+    height: 250vh;
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+  }
+  .fourthPage::hover{
+    transition: unset;
+  }
+  .teamHeading{
+    font-size: 3rem;
+    justify-content: unset;
+  }
+  .topTeam{
+    flex-direction: column;
+    height: 525px;
+    width: 330px;
+    align-items: center;
+  }
+  .drCard{
+    height: 50%;
+    width: 80%;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .drCard:hover{
+    width: 85%;
+    height: 50%;
+  }
+  .deviderCardImage{
+    width: 20px;
+    height: 5px;
+  }
+  .bangkokPictures{
+    height: 250px;
+    width: 100%;
+    flex-wrap:wrap;
+  }
+    .pic {
+      width: 80px;
+      height: 80px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/1stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .pic2 {
+      width: 90px;
+      height: 90px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/2stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .pic3 {
+      width: 90px;
+      height: 90px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/3stPicture.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .pic4 {
+      width: 90px;
+      height: 90px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/4stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .pic5 {
+      width: 90px;
+      height: 90px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/5stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+  
+    }
+  
+    .pic6 {
+      width: 90px;
+      height: 90px;
+      /* border: solid red 1px; */
+      transition: all 0.8s;
+      background: url(/6stPicture.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+        .pic:hover,
+        .pic2:hover,
+        .pic3:hover,
+        .pic4:hover,
+        .pic5:hover,
+        .pic6:hover {
+          transition: all 0.5s;
+          width: 120px;
+          height: 120px;
+          box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.565);
+        }
+
+        .middleTeam{
+          flex-direction: column;
+          width: 100%;
+          height: 25%;
+        }
+        .middleTeamContainer{
+          width: 100%;
+        }
+        .teamDpContainer{
+          width: 100px;
+
+        }
+      
+      .bottomTeam{
+        flex-direction: column;
+        width: 95%;
+        height: 500px;
+        font-size: 0.8rem;
+      }
+      .deviderLineFooter{
+        width: 80%;
+        height: 4px;
+      }
+      .location{
+        width: 80%;
+      }
+             
+      .questionContainer{
+        margin-top: 10px;
+      }
+
+      .instagram{
+        height: 30px;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-position-x: center;
+      }
+
+}
