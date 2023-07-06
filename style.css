@@ -252,12 +252,12 @@ box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
     background: url(/topSecondPageCurve.svg), url(/bottomSecondPageCurve.png);
     background-repeat: no-repeat;
     background-position: top, bottom;
-    background-size: 105%, 105%;
-    background-color: #78996D;
+    background-size: 115%, 105%;
+    background-color: white;
   }
   .servicesHeading{
     font-size: 5rem;
-    color: white;
+    color: #78996D;
   }
 
   .servicesContainer{
@@ -286,11 +286,12 @@ box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    color: white;
     transition: all 1.3s;
   }
     .servicesOfferedLeft:hover{
       cursor: default;
-      color: white;
+      color: #78996D;
       /* color: #6c63ff; */
       transition: all 08.s;
     }
@@ -312,13 +313,14 @@ box-shadow: 10px 10px 10px 0px rgba(34, 33, 33, 0.466);
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    color: white;
     transition: all 1.3s;
   }
   
 
     .servicesOfferedRight:hover {
       /* color: #6c63ff; */
-      color: white;
+      color: #78996D;
       transition: all 08.s;
     }
 /* SECOND PAGE END */
@@ -772,7 +774,7 @@ transition: all 0.8s;
     }
     .servicesHeading {
     font-size: 2rem;
-    color: white;
+    color: #78996D;
     margin-bottom: 20px;
     }
 
