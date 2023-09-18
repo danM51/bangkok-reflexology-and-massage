@@ -38,8 +38,22 @@ body{
         background-position-x: 55%, 65%, right;
         background-position-y: 60%, 40%, bottom;
         background-color: #091B2B;
-        /* you can take out the above background color to leave white if they doesn't like it {test} */
+        animation: colorShift 10s alternate infinite ;
         transition: all 2s;
+}
+@keyframes colorShift {
+  0%{
+    background-color: #091b2a;
+  }
+  33.33%{
+    background-color: #13446c;
+  }
+  66.66%{
+    background-color: #236194;
+  }
+  100%{
+    background-color: #2a6ba0;
+  }
 }
 
 
@@ -125,7 +139,7 @@ border-style: none;
 border-bottom: 2px solid black;
 color: azure;
 /* background-color: rgba(255, 255, 255, 0.478); */
-background-color: #091B2B;
+background-color: unset;
 transition: 0.3s;
 }
 
@@ -784,11 +798,20 @@ transition: all 0.8s;
         padding-top: 2px;
         padding-left: 0%;
     }
+    /* h3 h4{
+      transition: all;
+    } */
     .whiteCardLocation{
-      width: 250px;
-      height: 100px;
+      width: 270px;
+      height: 120px;
       margin-top: -45px;
       font-size: 0.5rem;
+      padding: 5px 5px;
+      transition: all 1s;
+    }
+    .whiteCardLocation h4{
+      font-size: 0.7rem;
+      color: #49996D;
     }
 
     .whiteCardLocation:hover {
