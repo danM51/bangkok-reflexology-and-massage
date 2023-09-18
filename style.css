@@ -37,6 +37,8 @@ body{
         background-size: 100px, 120px, 1500px;
         background-position-x: 55%, 65%, right;
         background-position-y: 60%, 40%, bottom;
+        background-color: #091B2B;
+        /* you can take out the above background color to leave white if they doesn't like it {test} */
         transition: all 2s;
 }
 
@@ -72,6 +74,7 @@ transition: all 1.5s;
     width: 150px;
     margin-top: 90px;
     margin-left: 12%;
+    background-color: white;
     /* margin-bottom: 20px; */
     transition: all 3.5s;
     /* background-color: #6b63ff85; */
@@ -120,7 +123,9 @@ h1{
 font-size: 1.5rem;
 border-style: none;
 border-bottom: 2px solid black;
-background-color: rgba(255, 255, 255, 0.478);
+color: azure;
+/* background-color: rgba(255, 255, 255, 0.478); */
+background-color: #091B2B;
 transition: 0.3s;
 }
 
@@ -128,7 +133,9 @@ transition: 0.3s;
 font-size: 1.5rem;
 border-style: none;
 border-bottom: 2px solid black;
-background-color: rgba(255, 255, 255, 0.593);
+/* background-color: rgba(255, 255, 255, 0.593); */
+color: azure;
+background-color: unset;
 transition: 0.3s;
 }
 .testimonies:hover,
@@ -608,14 +615,46 @@ transition: all 0.8s;
       align-items: center;
      }
      
-     .teamDp{
+     .teamDp1,
+     .teamDp2,
+     .teamDp3, 
+     .teamDp4{
         width: 70px;
         height: 70px;
         border-radius: 50%;
         border: solid 2px #78996D;
         transition: all 1s;
      }
-     .teamDp:hover{
+
+     .teamDp1{
+      background: url(./FmsangiDP.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70px;
+     }
+     .teamDp2{
+      background: url(./veronDP.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70px;
+     }
+     .teamDp3{
+      background: url(./soniaDp.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70px;
+     }
+     .teamDp4{
+      background: url(./dainessDp.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70px;
+     }
+
+         .teamDp1:hover,
+         .teamDp2:hover,
+         .teamDp3:hover,
+         .teamDp4:hover{
       width: 90px;
       height: 90px;
       transition: all 0.5s;
@@ -703,6 +742,7 @@ transition: all 0.8s;
     height: 100px;
     width: 100px;
     margin-left: 35%;
+    background-color: white;
     transition: all 1s;
   }
     .mainLogo:hover {

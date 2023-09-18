@@ -87,6 +87,9 @@ h1{
 background-color: rgba(0, 0, 0, 0.943);
 transition: all 1.5s;
 } */
+h3{
+margin: 0px 30px;
+}
 
 @media screen and (max-width: 767px) {
   body{
